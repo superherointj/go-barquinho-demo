@@ -23,4 +23,4 @@ To generate ent files, run:
 
 ## Question
 
-1) How to handle go modules that have 'replace' in Nix?
+1) How to handle go modules (in [go.mod](https://github.com/superherointj/go-barquinho-demo/blob/master/src/go.mod)) that have `replace` in Nix?
