@@ -1,5 +1,7 @@
 # barquinho demo
 
+## Building
+
 To see error message:
 
 nix build .#barquinho
@@ -13,11 +15,14 @@ Errors as:
 >         To sync the vendor directory, run:
 >                 go mod vendor
 
-
-For development environment:
+## For development
 
 > nix develop .#barquinho
 
 To generate ent files, execute:
 
 > make
+
+## Question
+
+1) How to handle go modules that have 'replace' in Nix?
