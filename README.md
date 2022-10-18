@@ -2,9 +2,7 @@
 
 ## Building
 
-To see error message:
-
-nix build .#barquinho
+> nix build .#barquinho
 
 Errors as:
 
@@ -19,7 +17,7 @@ Errors as:
 
 > nix develop .#barquinho
 
-To generate ent files, execute:
+To generate ent files, run:
 
 > make
 
