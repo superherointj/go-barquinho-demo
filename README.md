@@ -13,6 +13,21 @@ Errors as:
 >         To sync the vendor directory, run:
 >                 go mod vendor
 
+
+Update:
+
+go install github.com/superherointj/go-barquinho-demo/src@latest
+
+Also fails.
+
+But:
+
+git clone github.com/superherointj/go-barquinho-demo
+
+cd src; GOBIN=./ go install
+
+Works!
+
 ## For development
 
 > nix develop .#barquinho
@@ -24,3 +39,5 @@ To generate ent files, run:
 ## Question
 
 1) How to handle go modules (in [go.mod](https://github.com/superherointj/go-barquinho-demo/blob/master/src/go.mod)) that have `replace` in Nix?
+
+Problem was being causes by `go install` that does not accept `replace` in `go.mod`. Solution could be to git clone repository and run `go install` instead of relying on buildGoModule which uses `go install`.
